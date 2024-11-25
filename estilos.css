@@ -13,12 +13,12 @@ body {
     margin: 0 auto;
 }
 
-
 .header {
     background-color: #a3c9d9; 
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .header .logo {
@@ -29,7 +29,6 @@ body {
 }
 
 .header-content {
-    text-align: center;
     padding: 40px 20px;
 }
 
@@ -60,7 +59,6 @@ body {
     transform: translateY(-2px); 
 }
 
-
 .coffe {
     background-color: #fefefe; 
     padding: 40px 20px;
@@ -90,6 +88,39 @@ body {
 }
 
 
+img:first-of-type {
+    display: block;
+    margin: 0 auto;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-item img {
+    border-radius: 50%; 
+    max-width: 150px;
+    height: auto;
+}
+
+.offer-item img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.menu-item img,
+.offer-item img,
+.coffe-1 img,
+.testimonial-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+
 .services-content {
     background-color: #f8f1e9; 
     padding: 40px 20px;
@@ -107,7 +138,7 @@ body {
     transform: scale(1.05); 
 }
 
-/* Estilos del footer */
+
 footer {
     background-color: #4b4b4b;
     color: white;
@@ -125,58 +156,67 @@ footer a:hover {
     color: #527582; 
 }
 
-/* Método para ser responsiva */ 
+
 @media (max-width: 768px) {
-    .header .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .coffe-1, .services-1, .blog-1 {
-        width: calc(50% - 20px);
-    }
-
     .header-content {
         padding: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 2rem; 
+    }
+
+    .btn-1 {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .coffe h2 {
+        font-size: 1.8rem;
+    }
+
+    .coffe p {
+        font-size: 1rem;
+    }
+
+    .coffe-1, .services-1 {
+        width: 100%;
+        margin: 10px 0; 
     }
 }
 
 
 @media (max-width: 480px) {
-    .coffe-1, .services-1, .blog-1 {
-        width: 100%;
-    }
-
     .header-content h1 {
-        font-size: 1.5rem; 
-    }
-
-    .header-content p {
-        font-size: 0.9rem; 
-    }
-
-    .btn-1 {
-        padding: 8px 16px; 
-        font-size: 0.9rem;
-    }
-
-    .coffe h2 {
         font-size: 1.5rem;
     }
 
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-1 {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .coffe h2 {
+        font-size: 1.4rem;
+    }
+
     .coffe p {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     .services-group .services-1 {
-        width: 100%; 
+        width: 100%;
+    }
+
+    .container {
+        width: 95%; 
     }
 }
+
 
 ::-webkit-scrollbar {
     width: 18px;
@@ -191,6 +231,15 @@ footer a:hover {
     border-radius: 12px;
     border: 3px solid #e0e0e0;
 }
+
+
+    .centrar-imagen {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+
 
 
 
