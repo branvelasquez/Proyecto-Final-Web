@@ -7,10 +7,15 @@ body {
     color: #4b4b4b; 
 }
 
+.centered{
+    text-align: center;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .header {
@@ -239,6 +244,12 @@ footer a:hover {
         margin: 20px 0;
     }
 
+    
+
+    .imagen-ajustada {
+        margin-left: 100px;
+        margin-right: 0;
+    }
 
 
 
